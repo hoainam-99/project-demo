@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+body{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(134, 228, 231);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        .header{
+            width: 1024px;
+            .header__banner{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 0;
+                .logo{
+                    padding: 6px 12px;
+                    border: 1px solid #ccc;
+                    a{
+                        font-size: 28px;
+                    }
+                }
+                .search-box{
+                    border: .5px solid #ccc;
+                    background-color: #fff;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    input{
+                        border: none;
+                        padding: 8px 12px;
+                        width: 425px;
+                    }
+                    button{
+                        font-size: 20px;
+                        padding: 6px 8px;
+                        border: none;
+                        background-color: rgb(19, 159, 224);
+                        transition: 0.25s;
+                    }
+                    button:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .login-btn{
+                    button{
+                        padding: 4px 8px;
+                        font-size: 16px;
+                        background-color: rgb(134, 228, 231);
+                        border: none;
+                        transition: 0.25s;
+                    }
+                    button:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .cart{
+                    position: relative;
+                    transition: 0.25s;
+                    a{
+                        font-size: 26px;
+                    }
+                    span{
+                        position: absolute;
+                        border: .5px solid #fff;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        padding: 1px 4px;
+                        transform: translate(-6px, -9px);
+                    }
+                }
+                .cart:hover{
+                    transform: scale(1.1);
+                }
+            }    
+        }
+    }
+    section{
+        margin-top: 69px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: rgba($color: #ccc, $alpha: 0.2);
+        .section{
+            background-color: #fff;
+            width: 1024px;
+            overflow: hidden;
+            .section__taskbar{
+                
+                .taskbar{
+                    position: relative;
+                    h1{
+                        padding: 8px 16px;
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0 4px;
+                            transition: 0.4s;
+                            .menu-content{
+                                border: .5px solid #ccc;
+                                width: 120px;
+                                height: 143px;
+                                overflow: hidden;
+                                margin-bottom: 3px;
+                                transition: 0.25s;
+                                background-color: #fff;
+                                text-align: center;
+                                img{
+                                    width: 118px;
+                                    height: 100px;
+                                }
+                                p{
+                                    text-align: center;
+                                    font-size: 14px;
+                                }
+                            }
+                            .menu-content:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    .btn{
+                        position: absolute;
+                        top: 197px;
+                        border: none;
+                        border-radius: 50%;
+                        font-size: 18px;
+                        padding: 2px 7px;
+                        background-color: #fff;
+                        transition: 0.25s;
+                        opacity: 0.5;
+                    }
+                    .btn:hover{
+                        transform: scale(2);
+                        background-color: #ccc;
+                        opacity: 1;
+                    }
+                    .prev{
+                        left: 0px;
+                        visibility: hidden;
+                    }
+                    .next{
+                        right: 0px;
+                    }
+                }
+            }
+            .trademark{
+                h1{
+                    padding: 8px 16px;
+                }
+                ul{
+                    width: 300%;
+                    display: flex;
+                    
+                    li{
+                        width: 100%;
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

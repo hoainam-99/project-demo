@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.container header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #86e4e7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container header .header {
+  width: 1024px;
+}
+
+.container header .header .header__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+}
+
+.container header .header .header__banner .logo {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+
+.container header .header .header__banner .logo a {
+  font-size: 28px;
+}
+
+.container header .header .header__banner .search-box {
+  border: .5px solid #ccc;
+  background-color: #fff;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container header .header .header__banner .search-box input {
+  border: none;
+  padding: 8px 12px;
+  width: 425px;
+}
+
+.container header .header .header__banner .search-box button {
+  font-size: 20px;
+  padding: 6px 8px;
+  border: none;
+  background-color: #139fe0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.container header .header .header__banner .search-box button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container header .header .header__banner .login-btn button {
+  padding: 4px 8px;
+  font-size: 16px;
+  background-color: #86e4e7;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.container header .header .header__banner .login-btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container header .header .header__banner .cart {
+  position: relative;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.container header .header .header__banner .cart a {
+  font-size: 26px;
+}
+
+.container header .header .header__banner .cart span {
+  position: absolute;
+  border: .5px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1px 4px;
+  -webkit-transform: translate(-6px, -9px);
+          transform: translate(-6px, -9px);
+}
+
+.container header .header .header__banner .cart:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container section {
+  margin-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+.container section .section {
+  background-color: #fff;
+  width: 1024px;
+  overflow: hidden;
+}
+
+.container section .section .section__taskbar .taskbar {
+  position: relative;
+}
+
+.container section .section .section__taskbar .taskbar h1 {
+  padding: 8px 16px;
+}
+
+.container section .section .section__taskbar .taskbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container section .section .section__taskbar .taskbar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container section .section .section__taskbar .taskbar ul li .menu-content {
+  border: .5px solid #ccc;
+  width: 120px;
+  height: 143px;
+  overflow: hidden;
+  margin-bottom: 3px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container section .section .section__taskbar .taskbar ul li .menu-content img {
+  width: 118px;
+  height: 100px;
+}
+
+.container section .section .section__taskbar .taskbar ul li .menu-content p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.container section .section .section__taskbar .taskbar ul li .menu-content:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container section .section .section__taskbar .taskbar .btn {
+  position: absolute;
+  top: 197px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 2px 7px;
+  background-color: #fff;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  opacity: 0.5;
+}
+
+.container section .section .section__taskbar .taskbar .btn:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: #ccc;
+  opacity: 1;
+}
+
+.container section .section .section__taskbar .taskbar .prev {
+  left: 0px;
+  visibility: hidden;
+}
+
+.container section .section .section__taskbar .taskbar .next {
+  right: 0px;
+}
+
+.container section .section .trademark h1 {
+  padding: 8px 16px;
+}
+
+.container section .section .trademark ul {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container section .section .trademark ul li {
+  width: 100%;
+}
+
+.container section .section .trademark ul li a img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

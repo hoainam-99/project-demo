@@ -1,0 +1,8 @@
+- user:
+	+ home
+	+ giỏ hàng
+	+ sản phẩm theo danh mục
+	+ đăng nhập / đăng ký
+- admin: 
+	+ home
+	
