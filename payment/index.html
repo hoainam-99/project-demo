@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.0.0-beta3-web/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="header__taskbar">
+            <ul>
+              <li>
+                <a href="">Kênh người bán |</a>
+                <a href="">Tải ứng dụng |</a>
+                <span>Kết nối</span>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="">Chăm Sóc Khách Hàng |</a>
+                <a href="">Kiểm Tra Đơn Hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__banner">
+            <div class="logo">
+              <a href="#">Cánh Chim</a>
+              <h2>THANH TOÁN</h2>
+            </div>
+            <form class="search-box">
+              <input
+                type="text"
+                required
+                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn"
+              />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+                Tìm Kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section">
+          <div class="address">
+            <div class="address-border"></div>
+            <h3>Địa chỉ Nhận Hàng</h3>
+            <div class="basic-address">
+              <div class="name">Lê Hoài Nam</div>
+              <a href="tel:0375877699">0375877699</a>
+              <p class="diaChi">thôn Ngòi, Hoàng Đan, Tam Dương, Vĩnh Phúc</p>
+              <button onclick="show()">Thay đổi</button>
+            </div>
+            <div class="detail-address hide">
+              <div class="customer-info">
+                <input type="radio" name="select_address" checked />
+                <div class="name">Lê Hoài Nam</div>
+                <a href="tel:0375877699">0375877699</a>
+                <p class="diaChi">thôn Ngòi, Hoàng Đan, Tam Dương, Vĩnh Phúc</p>
+              </div>
+              <div class="customer-info">
+                <input type="radio" name="select_address" />
+                <div class="name">Nguyễn Đức Hiếu</div>
+                <a href="tel:0962843311">0962843311</a>
+                <p class="diaChi">
+                  65b Phố Yên Hòa, Phường Yên Hòa, Quận Cầu Giấy, Hà Nội
+                </p>
+              </div>
+              <div class="customer-info">
+                <input type="radio" name="select_address" />
+                <div class="name">Vũ Trung Hiếu</div>
+                <a href="tel:0378673337">0378673337</a>
+                <p class="diaChi">thôn Hóc, Hoàng Đan, Tam Dương, Vĩnh Phúc</p>
+              </div>
+              <div class="btn">
+                <button class="submit">Hoàn Thành</button>
+                <button class="more">Thêm Địa Chỉ Mới</button>
+                <button class="reset" onclick="hide()">Trở Lại</button>
+              </div>
+            </div>
+          </div>
+          <div class="order-products">
+            <div class="order__header">
+              <div class="product">Sản Phẩm</div>
+              <div class="product-edit">
+                <li>Đơn Giá</li>
+                <li>Số Lượng</li>
+                <li>Số Tiền</li>
+              </div>
+            </div>
+            <div class="order__content">
+              <div class="store-name">Game Store</div>
+              <div class="store-product">
+                <div class="store-product-info">
+                  <a href="">
+                    <img src="./assets/img/maychoigame.jpeg" alt="" />
+                    <p>Máy chơi Game Nintendo Switch</p>
+                  </a>
+                  <span>Phân Loại Hàng: Máy chơi Game</span>
+                </div>
+                <div class="store-product-edit">
+                  <div class="product-unitPrice">6 990 000</div>
+                  <div class="product-quantily">1</div>
+                  <div class="total-price">6 990 000</div>
+                </div>
+              </div>
+              <div class="sum-price">
+                <div class="voucher">
+                  <p>Bạn có Voucher giảm giá?</p>
+                  <button>Chọn hoặc Nhập Mã Voucher tại đây</button>
+                </div>
+                <div class="note-nav">
+                  <div class="note">
+                    <label for="note_id"
+                      >Lưu ý dành cho người bán hàng :
+                    </label>
+                    <input type="text" id="note_id" />
+                  </div>
+                  <div class="ship">
+                    <p>Đơn vị vận chuyển: Nhanh</p>
+                    <button>Thay Đổi</button>
+                    <p>37 600</p>
+                  </div>
+                </div>
+                <div class="price">Tổng số tiền: 7 027 600</div>
+              </div>
+            </div>
+            <div class="order__content">
+              <div class="store-name">SmartPhone Store</div>
+              <div class="store-product">
+                <div class="store-product-info">
+                  <a href="">
+                    <img src="./assets/img/ip13promax.jpeg" alt="" />
+                    <p>Điện thoại iPhone 13 Pro Max 256GB - Hàng Chính Hãng</p>
+                  </a>
+                  <span>Phân Loại Hàng: Gold</span>
+                </div>
+                <div class="store-product-edit">
+                  <div class="product-unitPrice">33 450 000</div>
+                  <div class="product-quantily">1</div>
+                  <div class="total-price">33 450 000</div>
+                </div>
+              </div>
+              <div class="store-product">
+                <div class="store-product-info">
+                  <a href="">
+                    <img src="./assets/img/ip13mini.jpeg" alt="" />
+                    <p>Điện thoại iPhone 13 Mini 128GB - Hàng Chính Hãng</p>
+                  </a>
+                  <span>Phân Loại Hàng: Red</span>
+                </div>
+                <div class="store-product-edit">
+                  <div class="product-unitPrice">27 450 000</div>
+                  <div class="product-quantily">1</div>
+                  <div class="total-price">27 450 000</div>
+                </div>
+              </div>
+              <div class="sum-price">
+                <div class="voucher">
+                  <p>Bạn có Voucher giảm giá?</p>
+                  <button>Chọn hoặc Nhập Mã Voucher tại đây</button>
+                </div>
+                <div class="note-nav">
+                  <div class="note">
+                    <label for="note_id"
+                      >Lưu ý dành cho người bán hàng :
+                    </label>
+                    <input type="text" id="note_id" />
+                  </div>
+                  <div class="ship">
+                    <p>Đơn vị vận chuyển: Nhanh</p>
+                    <button>Thay Đổi</button>
+                    <p>37 600</p>
+                  </div>
+                </div>
+                <div class="price">Tổng số tiền: 60 937 600</div>
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="payment-main">
+              <div class="payment-nav">
+                <p>Tổng tiền hàng</p>
+                <span>67.890.000</span>
+              </div>
+              <div class="payment-nav">
+                <p>Phí vận chuyển</p>
+                <span>70.400</span>
+              </div>
+              <div class="payment-nav">
+                <p>Tổng thanh toán</p>
+                <span>67.960.400</span>
+              </div>
+            </div>
+          </div>
+            <div class="payment-confirm">
+              <p>
+                Nhấn "Đặt Hàng" đồng nghĩa với việc bạn đồng ý tuân thủ theo 
+                <a href="">Điều Khoản</a>
+                của Cánh Chim
+              </p>
+              <button>Đặt Hàng</button>
+            </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./assets/js/app.js"></script>
+</html>

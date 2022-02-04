@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.0.0-beta3-web/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="header__taskbar">
+            <ul>
+              <li>
+                <a href="">Kênh người bán |</a>
+                <a href="">Tải ứng dụng |</a>
+                <span>Kết nối</span>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="">Chăm Sóc Khách Hàng |</a>
+                <a href="">Kiểm Tra Đơn Hàng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__banner">
+            <div class="logo">
+              <a href="#">Cánh Chim</a>
+              <h2>GIỎ HÀNG</h2>
+            </div>
+            <form class="search-box">
+              <input
+                type="text"
+                required
+                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn"
+              />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+                Tìm Kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section">
+          <div class="section__header">
+            <div class="product">Sản Phẩm</div>
+            <div class="product-edit">
+              <li>Đơn Giá</li>
+              <li>Số Lượng</li>
+              <li>Số Tiền</li>
+              <li>Thao Tác</li>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="store-name">
+              <input type="checkbox" />
+              <span>Game Store</span>
+            </div>
+            <div class="store-product">
+              <input type="checkbox" />
+              <div class="store-product-info">
+                <a href="">
+                  <img src="./assets/img/maychoigame.jpeg" alt="" />
+                  <p>Máy chơi Game Nintendo Switch</p>
+                </a>
+                <span>Phân Loại Hàng: Máy chơi Game</span>
+              </div>
+              <div class="store-product-edit">
+                <input
+                  class="product-unitPrice"
+                  type="number"
+                  value="6990000"
+                  disabled
+                />
+                <input
+                  class="product-quantily"
+                  type="number"
+                  value="1"
+                  onchange="changeQuantily()"
+                />
+                <input class="total-price" type="number" disabled />
+                <button onclick="deleteProduct()">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="store-name">
+              <input type="checkbox" />
+              <span>SmartPhone Store</span>
+            </div>
+            <div class="store-product">
+              <input type="checkbox" />
+              <div class="store-product-info">
+                <a href="">
+                  <img src="./assets/img/ip13promax.jpeg" alt="" />
+                  <p>Điện thoại iPhone 13 Pro Max 256GB - Hàng Chính Hãng</p>
+                </a>
+                <span>Phân Loại Hàng: Gold</span>
+              </div>
+              <div class="store-product-edit">
+                <input
+                  class="product-unitPrice1"
+                  type="number"
+                  value="33450000"
+                  disabled
+                />
+                <input
+                  class="product-quantily1"
+                  type="number"
+                  value="1"
+                  onchange="changeQuantily1()"
+                />
+                <input class="total-price1" type="number" disabled />
+                <button onclick="deleteProduct()">Delete</button>
+              </div>
+            </div>
+            <div class="store-product">
+              <input type="checkbox" />
+              <div class="store-product-info">
+                <a href="">
+                  <img src="./assets/img/ip13mini.jpeg" alt="" />
+                  <p>Điện thoại iPhone 13 Mini 128GB - Hàng Chính Hãng</p>
+                </a>
+                <span>Phân Loại Hàng: Red</span>
+              </div>
+              <div class="store-product-edit">
+                <input
+                  class="product-unitPrice2"
+                  type="number"
+                  value="27450000"
+                  disabled
+                />
+                <input
+                  class="product-quantily2"
+                  type="number"
+                  value="1"
+                  onchange="changeQuantily2()"
+                />
+                <input class="total-price2" type="number" disabled />
+                <button onclick="deleteProduct()">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="section__total-price">
+            <div class="voucher">
+              <p>Bạn có Voucher giảm giá?</p>
+              <button>Chọn hoặc Nhập Mã Voucher tại đây</button>
+            </div>
+            <div class="total-price">
+              <div class="select-all">
+                <input type="checkbox" />
+                <span>Chọn tất cả(3)</span>
+              </div>
+              <div class="total-price-confirm">
+                <h4>Tổng thanh toán (3 sản phẩm): VNĐ</h4>
+                <input type="number" id="sum_id" value="0" disabled />
+                <button>Mua Hàng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="delete-product hide">
+      <div class="delete-confirm">
+        <h1>Thông Báo</h1>
+        <p>Bạn chắc chắn muốn xóa sản phẩm này?</p>
+        <div class="btn">
+          <button class="submit">Có</button>
+          <button class="reset" onclick="deleteCancel()">Không</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/app.js"></script>
+</html>

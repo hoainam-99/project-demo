@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Info</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/icon/fontawesome-free-6.0.0-beta3-web/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="header__taskbar">
+            <ul>
+              <li>
+                <a href="">Kênh người bán |</a>
+                <a href="">Tải ứng dụng |</a>
+                <span>Kết nối</span>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="">Chăm Sóc Khách Hàng |</a>
+                <a href="">Kiểm Tra Đơn Hàng</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__banner">
+            <div class="logo">
+              <a href="#">Cánh Chim</a>
+            </div>
+            <form class="search-box">
+              <input
+                type="text"
+                required
+                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn"
+              />
+              <button class="search-btn">
+                <i class="fas fa-search"></i>
+                Tìm Kiếm
+              </button>
+            </form>
+            <div class="login-btn">
+              <button><i class="far fa-user"></i> Đăng nhập</button>
+            </div>
+            <div class="cart">
+              <a href=""><i class="fas fa-shopping-cart"></i></a>
+              <span>3</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section">
+          <img src="./assets/img/ip13promax.jpeg" alt="" />
+          <div class="product-info">
+            <h1>Điện thoại iPhone 13 Pro - Hàng Chính Hãng</h1>
+            <p>Thương Hiệu: Apple</p>
+            <h2>27.780.000 <span>đ</span></h2>
+            <div class="color">
+              <p>Màu: Gold</p>
+              <button>
+                <img src="./assets/img/ip13promax.jpeg" alt="" />
+                <span>Gold</span>
+              </button>
+            </div>
+            <p>Dung lượng: 128GB</p>
+            <div class="btn">
+              <button class="select">128GB</button>
+              <button>256GB</button>
+            </div>
+            <div class="voucher">
+              <p>Voucher:</p>
+              <button>Giảm 30k</button>
+              <button>Giảm 200k</button>
+              <button>Giảm 20k</button>
+            </div>
+            <p>
+                Mua <a href="">Gói Vip</a>  để trở thành thành viên Vip, nhận Freeship và hàng
+                loạt ưu đãi khác
+            </p>
+            <div class="quantily">
+              <p>Số lượng:</p>
+              <button onclick="minus()" class="minus">-</button>
+              <input type="number" value="1" id="quantily_id" />
+              <button onclick="plus()" class="plus">+</button>
+            </div>
+            <button class="submit-btn">Chọn Mua</button>
+          </div>
+          <div class="shop-info">
+            <h3>SmartPhone Store</h3>
+            <div class="shop-btn">
+              <button>Xem Shop</button>
+              <button>Theo Dõi</button>
+            </div>
+            <p>Thời gian bảo hành: 12 tháng</p>
+            <p>Hình thức bảo hành: Điện Tử</p>
+            <p>Nơi bảo hành: Bảo hành bởi nhà bán hàng thông qua Cánh Chim</p>
+            <a href="">Hướng dẫn bảo hành</a>
+            <div class="warranty">
+              <p>Hoàn tiền 111% nếu hàng giả</p>
+              <p>Mở hộp kiểm tra nhận hàng</p>
+              <p>Đổi trả trong 7 ngày nếu sản phẩm lỗi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./assets/js/app.js"></script>
+</html>

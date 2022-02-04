@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng Ký</h1>
+        <div class="register-select">
+            <button class="user-register">Khách Hàng</button>
+            <button class="salesman-register">Người Bán Hàng</button>
+        </div>
+        <form class="user-register__form">
+            <div class="form">
+                <label for="username_id">Tài Khoản</label>
+                <input type="text" required id="username_id">
+            </div>
+            <div class="form">
+                <label for="pwd_id">Mật Khẩu</label>
+                <input type="password" required id="pwd_id">
+            </div>
+            <div class="form">
+                <label for="confirmPwd_id">Xác Nhận Mật Khẩu</label>
+                <input type="password" required id="confirmPwd_id">
+            </div>
+            <div class="form">
+                <label for="fullname_id">Họ và Tên</label>
+                <input type="text" required id="fullname_id">
+            </div>
+            <div class="form">
+                <label for="tel_id">Số Điện Thoại</label>
+                <input type="number" id="tel_id" required>
+            </div>
+            <div class="form">
+                <label for="address_id">Địa Chỉ Nhận Hàng</label>
+                <textarea name="" id="address_id" cols="30" rows="4"></textarea>
+            </div>
+            <div class="btn">
+                <button class="submit" type="submit">Submit</button>
+                <button class="reset" type="reset">Clear</button>
+            </div>
+        </form>
+        <form class="salesman-register__form hide">
+            <p>Bạn muốn làm cộng tác viên bán hàng cùng Cánh Chim?</p>
+            <p>Hãy điền vào form phía dưới để đăng ký ngay.</p>
+            <p>Nếu có thắc mắc hãy nhấn vào <a href="">đây </a> để biết thêm thông tin về cách đăng ký và ưu đãi khi trở thành cộng tác viên của CÁNH CHIM</p>
+            <div class="form">
+                <label for="username_id">Tài Khoản</label>
+                <input type="text" required id="username_id">
+            </div>
+            <div class="form">
+                <label for="pwd_id">Mật Khẩu</label>
+                <input type="password" required id="pwd_id">
+            </div>
+            <div class="form">
+                <label for="confirmPwd_id">Xác Nhận Mật Khẩu</label>
+                <input type="password" required id="confirmPwd_id">
+            </div>
+            <div class="form">
+                <label for="fullname_id">Họ và Tên</label>
+                <input type="text" required id="fullname_id">
+            </div>
+            <div class="form">
+                <label for="tel_id">Số Điện Thoại</label>
+                <input type="number" id="tel_id" required>
+            </div>
+            <div class="form">
+                <label for="address_id">Địa Chỉ Cửa Hàng</label>
+                <textarea name="" id="address_id" cols="30" rows="4"></textarea>
+            </div>
+            <div class="form">
+                <label for="description_id">Mô Tả Cửa Hàng</label>
+                <textarea name="" id="description_id" cols="30" rows="4"></textarea>
+            </div>
+            <div class="form">
+                <label for="product_id">Mô Tả Sản Phẩm</label>
+                <textarea name="" id="description_id" cols="30" rows="4"></textarea>
+            </div>
+            <div class="btn">
+                <button class="submit" type="submit">Submit</button>
+                <button class="reset" type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>
